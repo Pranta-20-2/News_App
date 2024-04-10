@@ -8,7 +8,6 @@ const LeftSideNav = () => {
             .then(res => res.json())
             .then(data => setCategories(data))
     }, [])
-    console.log(categories);
     return (
         <div>
             <h2 className="text-2xl font-bold p-2">All Category: {categories.length}</h2>
